@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Color de fondo del cuerpo */
+    margin: 0;
+}
+
+.main-container {
+    background-color: #373535; /* Color de fondo gris oscuro */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px;
+}
+
+.title {
+    font-size: 18px;
+    margin-bottom: 16px;
+    font-weight: bold;
+    color: white; /* Color del texto del título */
+}
+
+.numbers {
+    display: flex;
+    gap: 20px;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+    color: #333; /* Color del texto dentro de la caja */
+}
