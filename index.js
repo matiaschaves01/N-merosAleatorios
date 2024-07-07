@@ -15,6 +15,7 @@ function generateRandomNumbers() {
 
 function displayRandomNumbers() {
   const numbersContainer = document.getElementById("random-numbers-container");
+  numbersContainer.innerHTML = ""; // Clear existing numbers
   const titles = ["Tradicional", "Match", "Desquite", "Sale o sale"];
 
   titles.forEach((title) => {
@@ -41,5 +42,9 @@ function displayRandomNumbers() {
     numbersContainer.appendChild(rowContainer);
   });
 }
+
+document
+  .getElementById("reload-button")
+  .addEventListener("click", displayRandomNumbers);
 
 displayRandomNumbers();
